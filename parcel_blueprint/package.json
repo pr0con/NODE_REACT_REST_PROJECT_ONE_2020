@@ -1,0 +1,27 @@
+{
+  "name": "parcel_blueprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --host trash.pr0con.io --https --cert /etc/letsencrypt/live/trash.pr0con.io/cert.pem --key /etc/letsencrypt/live/trash.pr0con.io/privkey.pem --hmr-hostname trash.pr0con.io --hmr-port 5000 --no-autoinstall --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "axios": "^0.19.2",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "react-json-view": "^1.19.1",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.0.1",
+    "uniqid": "^5.2.0"
+  }
+}

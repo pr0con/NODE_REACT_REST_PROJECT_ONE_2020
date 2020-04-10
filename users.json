@@ -1,0 +1,42 @@
+//NOTE YOU WILl HAVE TO CREATE A BCRYPT PASSWORD FOR THESE USERS 
+//COULD BE SAME ,, CHANGE THE INFO TO YOUR NEEDS etc... 
+
+"role" : "Administrator",
+"fullname" : "system admin",
+"alias" : "system",
+"email" : "admin@pr0con.com",
+"password" : "",
+"profile" : {
+    "url" : "/images/profiles/admin.jpg",
+    "location" : {
+        "city" : "Lake Placid",
+        "state" : "NY"
+    }
+}
+
+"role" : "User",
+"fullname" : "snoopy dog",
+"alias" : "sn00py",
+"email" : "sn00py@pr0con.com",
+"password" : "",
+"profile" : {
+    "url" : "/images/profiles/user2.png",
+    "location" : {
+        "city" : "Lake Placid",
+        "state" : "NY"
+    }
+}
+
+"role" : "User",
+"fullname" : "snow white",
+"alias" : "whitelady",
+"email" : "snowwhite@pr0con.com",
+"password" : "",
+"profile" : {
+    "url" : "/images/profiles/user3.png",
+    "location" : {
+        "city" : "Lake Placid",
+        "state" : "NY"
+    }
+}
+mongoimport --jsonArray --db api --collection articles --file fake_articles.json --authenticationDatabase admin --username mongod --password SOMEHARDPASSWORD
